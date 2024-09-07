@@ -100,16 +100,21 @@ header {
     padding: 20px 0;
     max-width: 1200px;
     margin: auto;
+    flex-wrap: wrap;
+}
+
+.title h2 {
+    margin-bottom: 1em;
 }
 
 .stats .stat {
     text-align: center;
-}
-
-.stat {
     display: flex;
     gap: 20px;
+    min-width: 180px;
+    width: clamp(20%, 150px, 100%);
 }
+
 
 .stat-text {
     text-align: left;
@@ -156,11 +161,14 @@ header {
     display: flex;
     justify-content: space-between;
     margin-top: 100px;
+    flex-wrap: wrap;
 }
 
-.content-text, .content-image {
+.content-text,
+.content-image {
     flex: 1;
     padding: 10px;
+    min-width: 380px;
 }
 
 .content-text {
@@ -264,4 +272,3 @@ footer {
     padding: 10px;
     color: #868686;
 }
-
